@@ -1,6 +1,17 @@
 {
   "dependencies": {
     "express": "^4.19.2",
+    "moment": "^2.30.1",
     "node": "^18.20.2"
-  }
+  },
+  "name": "proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

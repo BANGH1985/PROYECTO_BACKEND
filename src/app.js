@@ -1,15 +1,20 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const productRoutes = require('./routes/productRoutes');
+const cartRoutes = require('./routes/cartRoutes');
+const app = express();
+const PORT = 8080;
 
-const productsRouter = require("./routes/products.router.js")
-const cartsRouter = require("./routes/carts.router.js")
+// Middleware para parsear JSON y URL-encoded
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+// Rutas para productos
+app.use('/api/products', productRoutes);
 
-app.use("/api/products", productsRouter)
-app.use("/api/carts", cartsRouter)
+// Rutas para carritos
+app.use('/api/carts', cartRoutes);
 
-app.listen(PORT, () => {    
-    console.log(`Server is running on port ${PORT}`)
-})
+// Iniciar el servidor
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en el puerto ${PORT}`);
+});
