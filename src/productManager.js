@@ -75,11 +75,10 @@ class ProductManager {
             throw new Error('Producto no encontrado')
         }
         const updatedProduct = { ...this.products[index], ...updatedFields }
-        updatedProduct.id = productId
-        delete updatedProduct.id
         if (updatedProduct.code && this.products.some(product => product.code === updatedProduct.code && product.id !== productId)) {
             throw new Error('El código del producto ya existe')
         }
+        updatedProduct.id = productId
         this.products[index] = updatedProduct
         await this.saveProducts()
         return updatedProduct

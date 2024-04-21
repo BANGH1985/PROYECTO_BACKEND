@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Camisa",
+    "description": "Camisa manga larga",
+    "price": 25.99,
+    "thumbnail": "camisa.jpg",
+    "code": "PRD001",
+    "stock": 100,
+    "category": "Ropa"
+  },
+  {
+    "id": 2,
+    "title": "Pantalón",
+    "description": "Pantalón de vestir",
+    "price": 34.99,
+    "thumbnail": "pantalon.jpg",
+    "code": "PRD002",
+    "stock": 50,
+    "category": "Ropa"
+  },
+  {
+    "id": 3,
+    "title": "Zapatos nuevos",
+    "description": "Zapatos de cuero",
+    "price": 10.25,
+    "thumbnail": "zapatos.jpg",
+    "code": "PRD003",
+    "stock": 90,
+    "category": "Ropa"
+  }
+]
