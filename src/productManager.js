@@ -4,7 +4,7 @@ class ProductManager {
     constructor(filePath) {
         this.path = filePath
         this.products = []
-        this.loadProducts() // Llama a loadProducts() al instanciar ProductManager
+        this.loadProducts() 
     }
 
     async loadProducts() {
