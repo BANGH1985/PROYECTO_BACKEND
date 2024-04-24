@@ -14,7 +14,7 @@ class ProductManager {
         } catch (error) {
             if (error.code === 'ENOENT') {
                 console.log('El archivo de productos no existe. Creando uno nuevo.')
-                await this.saveProducts() // Crea el archivo si no existe
+                await this.saveProducts()
             } else {
                 console.error('Error al cargar los productos:', error)
             }
@@ -32,7 +32,7 @@ class ProductManager {
     }
 
     async getProducts() {
-        await this.loadProducts() // Asegura que los productos estén cargados
+        await this.loadProducts() 
         return this.products
     }
 
@@ -46,6 +46,7 @@ class ProductManager {
         const product_id = this.products.length > 0 ? this.products[this.products.length - 1].id + 1 : 1
         const product = {
             id: product_id,
+            status: true,
             title: newProduct.title,
             description: newProduct.description,
             price: newProduct.price,
@@ -55,13 +56,13 @@ class ProductManager {
             category: newProduct.category
         }
         this.products.push(product)
-        await this.saveProducts() // Guarda los productos después de agregar uno nuevo
+        await this.saveProducts() 
         console.log("Producto guardado")
         return product
     }
 
     async getProductById(product_id) {
-        await this.loadProducts() // Asegura que los productos estén cargados
+        await this.loadProducts() 
         const searchProduct = this.products.find(product => product.id === product_id)
         if (!searchProduct) {
             throw new Error('Producto no encontrado')

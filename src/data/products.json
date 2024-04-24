@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "status": true,
     "title": "Camisa",
     "description": "Camisa manga larga",
     "price": 25.99,
@@ -11,6 +12,7 @@
   },
   {
     "id": 2,
+    "status": true,
     "title": "Pantalón",
     "description": "Pantalón de vestir",
     "price": 34.99,
@@ -21,12 +23,79 @@
   },
   {
     "id": 3,
-    "title": "Zapatos nuevos",
+    "status": true,
+    "title": "Zapatos",
     "description": "Zapatos de cuero",
-    "price": 10.25,
+    "price": 49.99,
     "thumbnail": "zapatos.jpg",
     "code": "PRD003",
-    "stock": 90,
+    "stock": 80,
+    "category": "Ropa"
+  },
+  {
+    "id": 4,
+    "status": true,
+    "title": "Sombrero nuevo",
+    "description": "Sombrero de verano",
+    "price": 20,
+    "thumbnail": "sombrero.jpg",
+    "code": "PRD004",
+    "stock": 50,
+    "category": "Ropa"
+  },
+  {
+    "id": 5,
+    "status": true,
+    "title": "Bufanda",
+    "description": "Bufanda de lana",
+    "price": 12.5,
+    "thumbnail": "bufanda.jpg",
+    "code": "PRD005",
+    "stock": 60,
+    "category": "Ropa"
+  },
+  {
+    "id": 6,
+    "status": true,
+    "title": "Gorra",
+    "description": "Gorra deportiva",
+    "price": 18.75,
+    "thumbnail": "gorra.jpg",
+    "code": "PRD006",
+    "stock": 45,
+    "category": "Ropa"
+  },
+  {
+    "id": 7,
+    "status": true,
+    "title": "Gafas de sol",
+    "description": "Gafas de sol polarizadas",
+    "price": 29.99,
+    "thumbnail": "gafas.jpg",
+    "code": "PRD007",
+    "stock": 20,
+    "category": "Ropa"
+  },
+  {
+    "id": 8,
+    "status": true,
+    "title": "Bolso",
+    "description": "Bolso de cuero sintético",
+    "price": 39.99,
+    "thumbnail": "bolso.jpg",
+    "code": "PRD008",
+    "stock": 55,
+    "category": "Ropa"
+  },
+  {
+    "id": 9,
+    "status": true,
+    "title": "Reloj",
+    "description": "Reloj de pulsera",
+    "price": 99.99,
+    "thumbnail": "reloj.jpg",
+    "code": "PRD009",
+    "stock": 10,
     "category": "Ropa"
   }
 ]

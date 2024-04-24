@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
         console.error("Error al obtener productos:", error)
         res.status(500).json({ message: "Error al obtener productos" })
     }
-});
+})
 
 router.get('/:pid', async (req, res) => {
     const productId = parseInt(req.params.pid)
