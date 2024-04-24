@@ -12,7 +12,7 @@ Una ves que la consola ponga el msg Servidor iniciado en el puerto 8080 nuestra 
 ### Mostrar productos de la APP
 Para saber si tenemos algun producto en nuesta app tenemos que utilizar la funcion GET con la direccion q apunta a nuestra lista de productos la cual es http://localhost:8080/api/products a continuacion dejo una imagen de ejemplo: 
 
-![alt text](image.png)
+![alt text](./src/public/img/image.png)
 
 - La imagen con el n°1 hace referencia a la funcion GET la cual debemos utilizar para traer todos los productos de nuestra app 
 - La imagen con el N°2 es nuestra URL 
@@ -37,7 +37,7 @@ Para agegar productos en nuestra app, vamos a utilizar POSTMAN y con la funcion 
 
 
 
-![alt text](image-1.png)
+![alt text](./src/public/img/image-1.png)
 
 ### Mostrando producto especifico de la app
 
@@ -45,11 +45,11 @@ Luego de agregar varios productos, podriamos mostrar un producto en especifico s
 
 Si nuestra lista de productos es amplia debemos agregar a nuestra URL http://localhost:8080/api/products un querry de limite el cual por ejemplo para 2 productos quedaria asi http://localhost:8080/api/products?limit=2 
 
-![alt text](image-2.png)
+![alt text](./src/public/img/image-2.png)
 
 Para mostrarnos un producto en especifico conociendo su ID deberiamos usar la URL http://localhost:8080/api/products/4 por ejemplo para mostrar nuestro producto con numero 4
 
-![alt text](image-3.png)
+![alt text](./src/public/img/image-3.png)
 
 ### Actualizar un producto de nuestra lista
 
@@ -61,7 +61,7 @@ Para actualizar un producto de la lista tendriamos que usar la funcion PUT en PO
     "stock": 50
 }
 ```
-![alt text](image-4.png)
+![alt text](./src/public/img/image-4.png)
 
 ### Borrando un producto de la app
 
@@ -69,10 +69,11 @@ Para Borrar un producto de nuestra app debemos utilizar en POSTMAN la funcion DE
 
 Utilizo un GET para mostrar que existe
 
-![alt text](image-5.png)
+![alt text](./src/public/img/image-5.png)
 
 Lo elimino
 
-![alt text](image-6.png)
+![alt text](./src/public/img/image-6.png)
 
 Si hacen otro Get como en la primer imagen le indicara que el producto no fue encontrado.
+
